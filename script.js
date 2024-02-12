@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", (event) => {
   const predictButton = document.getElementById("predictButton");
   predictButton.addEventListener("click", uploadAndPredict);
-  var class_names = ["Bacterial Pneumonia", "Normal", "Viral Pneumonia"];
+  var class_names = ["All","Hem"];
 
   async function preprocessImage(image) {
     const tensor = tf.browser.fromPixels(image);
